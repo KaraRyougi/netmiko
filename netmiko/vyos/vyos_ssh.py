@@ -82,7 +82,7 @@ class VyOSSSH(CiscoSSHConnection):
         return output
 
     def set_base_prompt(
-        self, pri_prompt_terminator="$", alt_prompt_terminator="#", delay_factor=1
+        self, pri_prompt_terminator=">", alt_prompt_terminator="#", delay_factor=1
     ):
         """Sets self.base_prompt: used as delimiter for stripping of trailing prompt in output."""
         prompt = super().set_base_prompt(
